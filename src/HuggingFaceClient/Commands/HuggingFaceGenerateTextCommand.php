@@ -3,6 +3,7 @@
 namespace swapinvidya\HuggingFaceClient\Commands;
 
 use Illuminate\Console\Command;
+use swapinvidya\HuggingFaceClient\Exceptions\HuggingFaceClientException;
 use swapinvidya\HuggingFaceClient\HuggingFaceClient;
 
 class HuggingFaceGenerateTextCommand extends Command
@@ -21,11 +22,11 @@ class HuggingFaceGenerateTextCommand extends Command
     public function handle()
     {
         $prompt = $this->argument('prompt');
-        
+
         try {
             $response = $this->huggingFaceClient->generateText($prompt);
             $this->info('Generated Text:');
-            $this->line($response['generated_text']);
+            $this->line($response[0]['generated_text']);
         } catch (HuggingFaceClientException $e) {
             $this->error($e->errorMessage());  // Display custom error message
         } catch (\Exception $e) {

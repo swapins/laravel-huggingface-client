@@ -3,6 +3,7 @@
 namespace swapinvidya\HuggingFaceClient\Commands;
 
 use Illuminate\Console\Command;
+use swapinvidya\HuggingFaceClient\Exceptions\HuggingFaceClientException;
 use swapinvidya\HuggingFaceClient\HuggingFaceClient;
 
 class HuggingFaceGenerateImageCommand extends Command
@@ -21,11 +22,11 @@ class HuggingFaceGenerateImageCommand extends Command
     public function handle()
     {
         $prompt = $this->argument('prompt');
-        
+
         try {
             $response = $this->huggingFaceClient->generateImage($prompt);
             $this->info('Generated Image URL:');
-            $this->line($response['image_url']);
+            $this->line($response['image_path']);
         } catch (HuggingFaceClientException $e) {
             $this->error($e->errorMessage());  // Display custom error message
         } catch (\Exception $e) {
