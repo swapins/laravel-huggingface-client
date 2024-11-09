@@ -3,6 +3,7 @@
 namespace tests\Feature;
 
 use Illuminate\Support\Facades\Artisan;
+use swapinvidya\HuggingFaceClient\HuggingFaceClient;
 use Tests\TestCase;
 
 class HuggingFaceGenerateImageCommandTest extends TestCase

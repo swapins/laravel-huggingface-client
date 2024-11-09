@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Swapinvidya\\HuggingfaceClient\\": "src/"
+      "swapinvidya\\HuggingFaceClient\\": "src/HuggingFaceClient/"
     }
   },
   "authors": [

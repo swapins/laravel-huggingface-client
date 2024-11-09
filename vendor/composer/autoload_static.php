@@ -24,6 +24,10 @@ class ComposerStaticInita53c98c0bd5668234d3b80ed653e3cd0
         array (
             'voku\\' => 5,
         ),
+        's' => 
+        array (
+            'swapinvidya\\HuggingFaceClient\\' => 30,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php83\\' => 23,
@@ -31,7 +35,6 @@ class ComposerStaticInita53c98c0bd5668234d3b80ed653e3cd0
             'Symfony\\Contracts\\Translation\\' => 30,
             'Symfony\\Component\\Translation\\' => 30,
             'Symfony\\Component\\Clock\\' => 24,
-            'Swapinvidya\\HuggingfaceClient\\' => 30,
         ),
         'P' => 
         array (
@@ -68,6 +71,10 @@ class ComposerStaticInita53c98c0bd5668234d3b80ed653e3cd0
         array (
             0 => __DIR__ . '/..' . '/voku/portable-ascii/src/voku',
         ),
+        'swapinvidya\\HuggingFaceClient\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/HuggingFaceClient',
+        ),
         'Symfony\\Polyfill\\Php83\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php83',
@@ -87,10 +94,6 @@ class ComposerStaticInita53c98c0bd5668234d3b80ed653e3cd0
         'Symfony\\Component\\Clock\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/clock',
-        ),
-        'Swapinvidya\\HuggingfaceClient\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'Psr\\SimpleCache\\' => 
         array (
