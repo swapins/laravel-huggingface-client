@@ -24,11 +24,11 @@ class HuggingFaceServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../../config/huggingface.php' => config_path('huggingface.php'),
+                __DIR__ . '/../config/huggingface.php' => config_path('huggingface.php'),
             ], 'config');
         }
         $this->mergeConfigFrom(
-            __DIR__.'/../../config/huggingface.php', 'huggingface'
+            __DIR__.'/../config/huggingface.php', 'huggingface'
         );
     }
 }
