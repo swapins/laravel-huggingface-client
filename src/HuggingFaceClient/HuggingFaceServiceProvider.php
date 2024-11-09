@@ -7,7 +7,7 @@ class HuggingFaceServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/huggingface.php', 'huggingface');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/huggingface.php', 'huggingface');
 
         $this->app->singleton(HuggingFaceClient::class, function ($app) {
             $apiKey = config('huggingface.api_key');
