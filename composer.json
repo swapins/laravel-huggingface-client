@@ -1,0 +1,29 @@
+{
+  "name": "swapinvidya/laravel-huggingface-client",
+  "description": "A Laravel package for interacting with Hugging Face API",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Swapinvidya\\LaravelHuggingfaceClient\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Swapin Vidya",
+      "email": "swapin@laravelone.in"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "guzzlehttp/guzzle": "^7.0",
+    "illuminate/support": "^8.0|^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "swapinvidya\\HuggingFaceClient\\HuggingFaceServiceProvider"
+      ]
+    }
+  }
+}
