@@ -1,5 +1,5 @@
 <?php
-namespace YourVendor\HuggingFaceClient;
+namespace swapinvidya\HuggingFaceClient;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,6 +13,11 @@ class HuggingFaceServiceProvider extends ServiceProvider
             $apiKey = config('huggingface.api_key');
             return new HuggingFaceClient($apiKey);
         });
+
+        $this->commands([
+            Commands\HuggingFaceGenerateTextCommand::class,
+            Commands\HuggingFaceGenerateImageCommand::class,
+        ]);
     }
 
     public function boot()

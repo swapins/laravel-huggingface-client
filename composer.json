@@ -5,7 +5,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Swapinvidya\\LaravelHuggingfaceClient\\": "src/"
+      "Swapinvidya\\HuggingfaceClient\\": "src/"
     }
   },
   "authors": [

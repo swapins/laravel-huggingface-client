@@ -1,0 +1,40 @@
+# Laravel & Composer-specific files
+/vendor/
+/composer.lock
+/.idea/
+/.vscode/
+/node_modules/
+/npm-debug.log
+/yarn-debug.log
+/yarn-error.log
+
+# PHPStorm or other IDE specific files
+/.idea
+
+# Laravel .env file (sensitive environment settings)
+.env
+.env.*
+
+# Laravel specific cache, logs, and temporary files
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Laravel session and cache files
+/public/storage
+/public/hot
+
+# Ignoring directories for test environment or docker environment
+/docker
+
+# Ignore other temporary files
+*.log
+*.sqlite
+*.csv
+*.pdf
+
+# Ignore compiled PHP files
+*.php~
+*.phar
